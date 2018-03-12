@@ -14,8 +14,9 @@ BOT_NAME = 'gupiao'
 SPIDER_MODULES = ['gupiao.spiders']
 NEWSPIDER_MODULE = 'gupiao.spiders'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0'
-FEED_URI = u'/home/chenzhen2181/git/test/gupiao/b.csv'
-FEED_FORMAT = 'CSV'
+ITEM_PIPELINES={'gupiao.pipelines.GupiaoPipeline':300,}
+#FEED_URI = u'/home/chenzhen2181/git/test/gupiao/b.csv'
+#FEED_FORMAT = 'CSV'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'gupiao (+http://www.yourdomain.com)'

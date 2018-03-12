@@ -1,0 +1,148 @@
+2018-03-08 15:37:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: gupiao)
+2018-03-08 15:37:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.3.1, w3lib 1.19.0, Twisted 17.9.0, Python 2.7.12 (default, Dec  4 2017, 14:50:18) - [GCC 5.4.0 20160609], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-4.9.60-linuxkit-aufs-x86_64-with-Ubuntu-16.04-xenial
+2018-03-08 15:37:02 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'gupiao.spiders', 'SPIDER_MODULES': ['gupiao.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', 'BOT_NAME': 'gupiao'}
+2018-03-08 15:37:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-08 15:37:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-08 15:37:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-08 15:37:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['gupiao.pipelines.GupiaoPipeline']
+2018-03-08 15:37:02 [scrapy.core.engine] INFO: Spider opened
+2018-03-08 15:37:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-08 15:37:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-08 15:37:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://hq.sinajs.cn/list=sh510900> (referer: None)
+2018-03-08 15:37:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://hq.sinajs.cn/list=sh600666> (referer: None)
+2018-03-08 15:37:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://hq.sinajs.cn/list=sh513600> (referer: None)
+send: 'ehlo [172.17.0.2]\r\n'
+reply: '250-smtp.qq.com\r\n'
+reply: '250-PIPELINING\r\n'
+reply: '250-SIZE 73400320\r\n'
+reply: '250-AUTH LOGIN PLAIN\r\n'
+reply: '250-AUTH=LOGIN\r\n'
+reply: '250-MAILCOMPRESS\r\n'
+reply: '250 8BITMIME\r\n'
+reply: retcode (250); Msg: smtp.qq.com
+PIPELINING
+SIZE 73400320
+AUTH LOGIN PLAIN
+AUTH=LOGIN
+MAILCOMPRESS
+8BITMIME
+send: 'AUTH PLAIN ADEyMDMzMjk4NkBxcS5jb20Ad2NkeWVydGtmb2xzYmhiZw==\r\n'
+reply: '235 Authentication successful\r\n'
+reply: retcode (235); Msg: Authentication successful
+send: 'mail FROM:<120332986@qq.com> size=238\r\n'
+reply: '250 Ok\r\n'
+reply: retcode (250); Msg: Ok
+send: 'rcpt TO:<19955206682@189.cn>\r\n'
+reply: '250 Ok\r\n'
+reply: retcode (250); Msg: Ok
+send: 'data\r\n'
+reply: '354 End data with <CR><LF>.<CR><LF>\r\n'
+reply: retcode (354); Msg: End data with <CR><LF>.<CR><LF>
+data: (354, 'End data with <CR><LF>.<CR><LF>')
+send: 'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nSubject: =?utf-8?b?5aWl55Ge5b63ICAxNy40MDDlvZPliY3ku7fmoLzlj5jljJbotoXov4cwLjAy?=\r\n\r\n5aWl55Ge5b63ICAxNy40MDDlvZPliY3ku7fmoLzlj5jljJbotoXov4cwLjAy\r\n.\r\n'
+reply: '250 Ok: queued as \r\n'
+reply: retcode (250); Msg: Ok: queued as
+data: (250, 'Ok: queued as')
+send: 'quit\r\n'
+reply: '221 Bye\r\n'
+reply: retcode (221); Msg: Bye
+2018-03-08 15:37:04 [scrapy.core.scraper] ERROR: Error processing {'gp_w_code': u'sh600666',
+ 'gp_w_date': u'2018-03-08',
+ 'gp_w_is_sendemail': True,
+ 'gp_w_name': '\xe5\xa5\xa5\xe7\x91\x9e\xe5\xbe\xb7',
+ 'gp_w_price': u'17.400'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/data/gupiao/gupiao/pipelines.py", line 12, in process_item
+    with open(file_w_json_name, 'w') as f:
+IOError: [Errno 22] invalid mode ('w') or filename: 'E:\\docker_hard\\ubuntu_scrapy\\data\\gupiao\\gp_write_data.json'
+send: 'ehlo [172.17.0.2]\r\n'
+reply: '250-smtp.qq.com\r\n'
+reply: '250-PIPELINING\r\n'
+reply: '250-SIZE 73400320\r\n'
+reply: '250-AUTH LOGIN PLAIN\r\n'
+reply: '250-AUTH=LOGIN\r\n'
+reply: '250-MAILCOMPRESS\r\n'
+reply: '250 8BITMIME\r\n'
+reply: retcode (250); Msg: smtp.qq.com
+PIPELINING
+SIZE 73400320
+AUTH LOGIN PLAIN
+AUTH=LOGIN
+MAILCOMPRESS
+8BITMIME
+send: 'AUTH PLAIN ADEyMDMzMjk4NkBxcS5jb20Ad2NkeWVydGtmb2xzYmhiZw==\r\n'
+reply: '235 Authentication successful\r\n'
+reply: retcode (235); Msg: Authentication successful
+send: 'mail FROM:<120332986@qq.com> size=230\r\n'
+reply: '250 Ok\r\n'
+reply: retcode (250); Msg: Ok
+send: 'rcpt TO:<19955206682@189.cn>\r\n'
+reply: '250 Ok\r\n'
+reply: retcode (250); Msg: Ok
+send: 'data\r\n'
+reply: '354 End data with <CR><LF>.<CR><LF>\r\n'
+reply: retcode (354); Msg: End data with <CR><LF>.<CR><LF>
+data: (354, 'End data with <CR><LF>.<CR><LF>')
+send: 'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nSubject: =?utf-8?b?5oGS5oyHRVRGICAyLjU0OeW9k+WJjeS7t+agvOWPmOWMlui2hei/hzA=?=\r\n\r\n5oGS5oyHRVRGICAyLjU0OeW9k+WJjeS7t+agvOWPmOWMlui2hei/hzA=\r\n.\r\n'
+reply: '250 Ok: queued as \r\n'
+reply: retcode (250); Msg: Ok: queued as
+data: (250, 'Ok: queued as')
+send: 'quit\r\n'
+reply: '221 Bye\r\n'
+reply: retcode (221); Msg: Bye
+2018-03-08 15:37:06 [scrapy.core.scraper] ERROR: Error processing {'gp_w_code': u'sh513600',
+ 'gp_w_date': u'2018-03-08',
+ 'gp_w_is_sendemail': True,
+ 'gp_w_name': '\xe6\x81\x92\xe6\x8c\x87ETF',
+ 'gp_w_price': u'2.549'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/data/gupiao/gupiao/pipelines.py", line 12, in process_item
+    with open(file_w_json_name, 'w') as f:
+IOError: [Errno 22] invalid mode ('w') or filename: 'E:\\docker_hard\\ubuntu_scrapy\\data\\gupiao\\gp_write_data.json'
+2018-03-08 15:37:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-08 15:37:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 786,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 774,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 8, 15, 37, 6, 892002),
+ 'log_count/DEBUG': 4,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 50151424,
+ 'memusage/startup': 50151424,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2018, 3, 8, 15, 37, 2, 473428)}
+2018-03-08 15:37:06 [scrapy.core.engine] INFO: Spider closed (finished)
